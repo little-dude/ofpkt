@@ -1,0 +1,91 @@
+ofpkt
+=====
+
+OpenFlow 1.5 packet parser and decoder. Some parts of the code are directly
+taken from [smoltcp](https://github.com/m-labs/smoltcp), and the tests data is
+taken from [Ryu](http://ryu.readthedocs.io/).
+
+Current status:
+
+- [ ] Match fields structures
+    - [X] Openflow eXtensible Match
+    - [ ] Nicira eXtensible Match (currently not planned since deprecated in 1.5)
+- [ ] Flow stats structures
+- [ ] Messages
+    - [ ] `aggregate_stats_reply`
+    - [ ] `aggregate_stats_request`
+    - [ ] `barrier_reply`
+    - [ ] `barrier_request`
+    - [ ] `bundle_add`
+    - [ ] `bundle_ctrl`
+    - [ ] `bundle_features_reply`
+    - [ ] `bundle_features_request`
+    - [ ] `controller_status`
+    - [ ] `controller_status_reply`
+    - [ ] `controller_status_request`
+    - [ ] `desc_reply`
+    - [ ] `desc_request`
+    - [X] `echo_reply`
+    - [X] `echo_request`
+    - [X] `error_msg`
+    - [ ] `error_msg_experimenter`
+    - [ ] `experimenter`
+    - [ ] `experimenter_reply`
+    - [ ] `experimenter_request`
+    - [X] `features_reply`
+    - [X] `features_request`
+    - [ ] `flow_desc_reply`
+    - [ ] `flow_desc_request`
+    - [ ] `flow_mod`
+    - [ ] `flow_mod_conjunction`
+    - [ ] `flow_mod_match_conj`
+    - [ ] `flow_monitor_reply`
+    - [ ] `flow_monitor_request`
+    - [ ] `flow_removed`
+    - [ ] `flow_stats_reply`
+    - [ ] `flow_stats_request`
+    - [ ] `get_async_reply`
+    - [ ] `get_async_request`
+    - [ ] `get_config_reply`
+    - [ ] `get_config_request`
+    - [ ] `group_desc_reply`
+    - [ ] `group_desc_request`
+    - [ ] `group_features_reply`
+    - [ ] `group_features_request`
+    - [ ] `group_mod`
+    - [ ] `group_stats_reply`
+    - [ ] `group_stats_request`
+    - [X] `hello`
+    - [ ] `meter_desc_reply`
+    - [ ] `meter_desc_request`
+    - [ ] `meter_features_reply`
+    - [ ] `meter_features_request`
+    - [ ] `meter_mod`
+    - [ ] `meter_stats_reply`
+    - [ ] `meter_stats_request`
+    - [X] `packet_in`
+    - [ ] `packet_out`
+    - [ ] `port_desc_reply`
+    - [ ] `port_desc_request`
+    - [ ] `port_mod`
+    - [ ] `port_stats_reply`
+    - [ ] `port_stats_request`
+    - [ ] `port_status`
+    - [ ] `queue_desc_reply`
+    - [ ] `queue_desc_request`
+    - [ ] `queue_stats_reply`
+    - [ ] `queue_stats_request`
+    - [ ] `requestforward`
+    - [ ] `role_reply`
+    - [ ] `role_request`
+    - [ ] `role_status`
+    - [ ] `set_async`
+    - [X] `set_config`
+    - [ ] `table_desc_reply`
+    - [ ] `table_desc_request`
+    - [ ] `table_features_reply`
+    - [ ] `table_features_request`
+    - [ ] `table_mod`
+    - [ ] `table_stats_reply`
+    - [ ] `table_stats_request`
+    - [ ] `table_status`

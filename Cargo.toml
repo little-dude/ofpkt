@@ -1,0 +1,17 @@
+[package]
+authors = ["Corentin Henry <corentinhenry@gmail.com>"]
+description = "Openflow 1.5 packet parser and encoder"
+homepage = "https://github.com/little-dude/ofpkt"
+keywords = [
+    "sdn",
+    "openflow",
+    "parser",
+]
+license-file = "LICENSE-MIT"
+name = "ofpkt"
+readme = "README.md"
+version = "0.0.1"
+
+[dependencies]
+byteorder = "1.1.0"
+smoltcp = "0.4.0"
